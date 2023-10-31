@@ -1,5 +1,8 @@
 all: simulateur
 
+run:
+	./simulateur
+
 simulateur: main.o fonctions.o classes.o
 	g++ -o simulateur main.o fonctions.o classes.o
 
