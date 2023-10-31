@@ -24,17 +24,3 @@ TypeEnergie::TypeEnergie(const rapidjson::Value& obj){
     _note = obj["note"].GetFloat();
 };
 TypeEnergie::~TypeEnergie(){};
-
-/*bool TypeVehicule::initStruct(const rapidjson::Document& obj, const int nb) {
-    if (obj.IsObject()==false) { printf("Erreur"); return false;}
-    _nomVehicule = obj["donnees vehicules"][0]["types"][nb]["nom"].GetString();
-    _poidsMoyen = obj["donnees vehicules"][0]["types"][nb]["poids moyen"].GetString();
-    _note = obj["donnees vehicules"][0]["types"][nb]["note"].GetFloat();
-    return true;
-}*/
-/*bool TypeVehicule::initStruct(const rapidjson::Value& obj) {
-    _nomVehicule = obj["nom"].GetString();
-    _poidsMoyen = obj["poids moyen"].GetString();
-    _note = obj["note"].GetFloat();
-    return true;
-}*/
